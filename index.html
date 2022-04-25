@@ -1,0 +1,52 @@
+
+<html>
+    <head>
+      <title>Animal Sound Identification App</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+  
+    <body>
+        <div class="container">
+    
+            <center>
+              <h3 class="btn btn-warning heading">Animal Voice Recognistion app
+              <br>
+              <span>🐱</span>
+              <span>🐕</span>
+              <span>🐵</span>
+              <span>🦁</span>
+              <span>🦗</span>
+              </h3>
+        
+              <br><br>
+        
+              <p style="font-size: 22px;">
+                  <br>
+                <b style="color: green">Is it a Cat?</b>
+                <br>
+                <b style="color: red">Is it a Dog?</b>
+                <br>
+                <b style="color: yellowgreen">Is it a Monkey?</b>
+                <br>
+                <b style="color: orangered">Is it Lion?</b>
+                <br>
+                <b style="color: blue">Is it Background Noise?</b>
+              </p>
+      <img src="cat.jpeg" id="cat" width="200" height="200">
+      <img src="dog.jpeg" id="dog" width="200" height="200">
+      <img src="monkey.jpeg" id="monkey" width="200" height="200">
+      <img src="lion.jpeg" id="lion" width="200" height="200">
+      <img src="background.jpeg" id="background" width="200" height="200">
+              <br>
+              <button class="btn btn-warning" onclick="startClassification();"> START! </button>
+              <h3 id="result_label"> I can hear - </h3>
+              <h4 id="result_confidence"> Accuracy - </h4>
+              <br>
+          <script src="main.js"></script>
+          </body>
+          </html>
